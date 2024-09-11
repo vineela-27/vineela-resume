@@ -1,23 +1,126 @@
-.container {
-    padding-top: 5px;
-}
 
-.head {
-    font-weight: 800;
-    text-align: center;
-    position: relative;
-    display: inline-block;
+/* General Styling */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+  
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px; /* Increased left padding to move everything to the left */
+    padding-right: 5px;
+    padding-left: 30px;
+    position: fixed;
     width: 100%;
-}
+    height: 8%;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: flex-start; /* Aligns the content to the left */
+    align-items: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 40px;
+    flex-grow: 1; /* Allows the title to take up the left side */
+    font-family: "pacifico", cursive;
+    font-weight: 100;
+    font-size: 600;
 
-.nametag {
-    color: darkred;
-}
 
-.girlimage {
-    width: 70px;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-}
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 10px;
+    
+    padding-right: 50px;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin-left: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+  }
+  
+  nav ul li a:hover {
+    color: #ddd;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background-color: #f1f1f1;
+    padding: 0px 20px;
+    text-align: center;
+    align-items: center; /* Vertically center the content */
+    margin-top: 60px; /* Adjusted to account for fixed header height */
+    font-size: 1000;
+    min-height: 100vh;
+    display: flex; /* Use Flexbox for side-by-side layout */
+    justify-content: space-between; /* Pushes the content to the edges (left and right) */
+  }
+
+  
+  .left-intro {
+    flex: 1; /* Left section takes up 50% of available width */
+    text-align: center; /* Aligns text to the left */
+    font-weight: 800;
+    font-size: 1500;
+    font-family: Garamond;
+    padding-left: 40px;
+    padding-bottom: 200px;
+  }
+  .right-intro{
+    padding-right: 90px;
+    padding-bottom: 150px;
+  }
+  
+  .left-intro h2 {
+    font-size: 80px;
+    margin-bottom: 50px;
+  }
+  .name{
+    color: rgb(22, 110, 81);
+  }
+  .left-intro p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  #about, #projects, #contact {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  #about {
+    background-color: #e2e2e2;
+  }
+  
+  #projects {
+    background-color: #d3d3d3;
+  }
+  
+  #contact {
+    background-color: #c4c4c4;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
